@@ -10,9 +10,9 @@ YT.ready(_=>{
         playerVars: { "autoplay": 0, "controls": 0, "loop": 1, "playlist": videoId},
         events: {
             "onReady": e => {
-                e.target.setVolume(25);
+                e.target.setVolume(50);
                 clearInterval(loadInterval)
-                button.innerText = "Get rid of this infection"
+                button.innerText = "Click"
                 button.classList.add("ready");
                 button.addEventListener("click", () => {
                     animInterval = setInterval(preloaderAnim, 10);
